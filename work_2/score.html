@@ -1,0 +1,22 @@
+<html>
+<script type="text/javascript"> 
+function score() {
+	var x;
+	x=parseFloat(document.getElementById('c').value);
+	if(x>=60) {
+		document.getElementById("score").innerHTML = "You're Passed!"
+	}
+	else
+		document.getElementById("score").innerHTML = "You're Failed!"
+
+}
+</script>
+<body>
+<p>Enter Your Score</p>
+<p>Score:</p>
+<input id="c" name="score">
+<input type="button" value="Score" onClick="score();"> 
+<p>The result is</p>
+<output id="score">
+</body>
+</html>
