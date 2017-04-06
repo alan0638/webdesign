@@ -1,7 +1,6 @@
 <html>
 <script type="text/javascript"> 
 function plus(){
-
 	var x,y,z;
 	x=parseFloat(document.getElementById('a').value)
 	y=parseFloat(document.getElementById('b').value)
@@ -40,6 +39,7 @@ function divide() {
 <input type="button" value="Minus" onClick="minus()">
 <input type="button" value="Times" onClick="times()">
 <input type="button" value="Divide" onClick="divide()">
+<input type="reset" value="Clear" onClick="a.value='';b.value='';result.value='';">
 <p>The result is</p>
 <output id="result">
 </body>
