@@ -1,0 +1,46 @@
+<html>
+<script type="text/javascript"> 
+function plus(){
+
+	var x,y,z;
+	x=parseFloat(document.getElementById('a').value)
+	y=parseFloat(document.getElementById('b').value)
+	z=x+y;
+	document.getElementById("result").innerHTML = z;
+}
+function minus() {
+	var x,y,z;
+	x=parseFloat(document.getElementById('a').value)
+	y=parseFloat(document.getElementById('b').value)
+	z=x-y;
+	document.getElementById("result").innerHTML = z;
+}
+function times() {
+	var x,y,z;
+	x=parseFloat(document.getElementById('a').value)
+	y=parseFloat(document.getElementById('b').value)
+	z=x*y;
+	document.getElementById("result").innerHTML = z;
+}
+function divide() {
+	var x,y,z;
+	x=parseFloat(document.getElementById('a').value)
+	y=parseFloat(document.getElementById('b').value)
+	z=x/y;
+	document.getElementById("result").innerHTML = z;
+}
+</script>
+<body>
+<p>Enter two Number</p>
+<p>a:</p>
+<input id="a" name="number1">
+<p>b:</p>
+<input id="b" name="number2">
+<input type="button" value="Plus" onClick="plus();"> 
+<input type="button" value="Minus" onClick="minus()">
+<input type="button" value="Times" onClick="times()">
+<input type="button" value="Divide" onClick="divide()">
+<p>The result is</p>
+<output id="result">
+</body>
+</html>

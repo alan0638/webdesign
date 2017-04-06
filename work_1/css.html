@@ -1,0 +1,136 @@
+<!--Force IE6 into quirks mode with this comment tag-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的烘焙雞</title>
+<style type="text/css">
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%; 
+}
+
+#framecontentLeft{
+position: absolute; 
+top: 110px; 
+left: 0; 
+width: 200px; /*Width of left frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #CCEEFF;
+color: white;
+border-right: 2px solid;
+
+}
+
+#framecontentTop{
+position: fixed; 
+top: 0; 
+left: 0px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0;
+height: 110px; /*Height of top frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #CCEEEE;
+color: white;
+border-bottom: 2px solid;
+}
+
+#framecontentBottom{
+position: absolute; 
+top: auto; 
+left: 0px; /*Set left value to WidthOfLeftFrameDiv*/
+bottom: 0;
+right: 0;
+height: 120px; /*Height of bottom frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: #EECCEE;
+color: white;
+border-top: 2px solid;
+}
+
+#maincontent{
+position: fixed; 
+top: 110px; /*Set top value to HeightOfTopFrameDiv*/
+left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0;
+bottom: 120px; /*Set bottom value to HeightOfBottomFrameDiv*/
+overflow: auto; 
+background:  #CCEEFF;
+border-top:2px solid;
+border-bottom: 2px solid;
+border-left: 2px solid;
+color:white;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 110px 0 120px 200px; /*Set value to (HeightOfTopFrameDiv  0 HeightOfBottomFrameDiv WidthOfLeftFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+* html #framecontentTop, * html #framecontentBottom{ /*IE6 hack*/
+width: 100%;
+}
+
+</style>
+
+<script type="text/javascript">
+/*** Temporary text filler function. Remove when deploying template. ***/
+var gibberish=["This is just some filler text", "Welcome to Dynamic Drive CSS Library", "Demo content nothing to read here"]
+function filltext(words)
+</script>
+
+</head>
+
+<body>
+
+<div id="framecontentLeft">
+<div class="innertube">
+
+<p><a href="https://www.facebook.com">關於我</a></p>
+<p><a href="mood.html" target="_blank">心情小語</a></p>
+
+</div>
+</div>
+
+<div id="framecontentTop">
+<div class="innertube">
+
+<div style="position: absolute; color: black; bottom: 0px; right: 10px;font-size:40px">我的烘焙雞</div>
+
+</div>
+</div>
+
+
+<div id="framecontentBottom">
+<div class="innertube">
+
+<div style="position: absolute; color: black; bottom: 30%; left: 15px;"><h3>本網站由詹祐安製作</h3></div>
+
+</div>
+</div>
+
+
+<div id="maincontent">
+<div class="innertube">
+
+<div style="position: absolute; color: black; top: 8%; left: 35%;">我是祐安，我最喜歡的作業系統是Debian 系統</div>
+<div style="position: absolute; top: 15%; left: 35%;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Debian_logo.png" alt="這是替代文字"></div>
+</div>
+</div>
+
+</body>
+</html>
